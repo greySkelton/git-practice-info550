@@ -3,7 +3,9 @@ here::i_am(
 )
 
 set.seed(1)
-random_numbers1 <- rnorm(10)
+
+random_numbers1 <- rnorm(1000)
+
 
 saveRDS(
   random_numbers1,
@@ -11,7 +13,9 @@ saveRDS(
 )
 
 set.seed(2)
-random_numbers2 <- rgamma(10, shape = 1)
+
+random_numbers2 <- rgamma(1000, shape = 1)
+
 
 saveRDS(
   random_numbers2,
@@ -19,7 +23,9 @@ saveRDS(
 )
 
 set.seed(3)
-random_numbers3 <- runif(10)
+
+random_numbers3 <- runif(1000)
+
 
 saveRDS(
   random_numbers3,
@@ -28,7 +34,7 @@ saveRDS(
 
 
 set.seed(4)
-random_numbers4 <- rbinom(100, 1, 0.25)
+random_numbers4 <- rbinom(1000, 1, 0.25)
 
 saveRDS(
   random_numbers4,
